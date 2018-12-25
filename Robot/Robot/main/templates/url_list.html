@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL</title>
+</head>
+<body>
+<form>
+    <h1>URL</h1>
+    <ul>
+        {% for url in object_list %}
+            <li>{{ url.url }} </li>
+            <li>{{ url.date }} </li>
+            <li>{{ url.status }} </li>
+            <br>
+        {% endfor %}
+    <a href="/create/">new url</a><br>
+    </ul>
+</form>
+</body>
+</html>
